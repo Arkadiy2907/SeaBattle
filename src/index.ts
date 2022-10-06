@@ -33,21 +33,24 @@ document.addEventListener('DOMContentLoaded', () => {
         .use('/warning', warning)
         .use('*', FiveHundred)
 
-    let isStartRoute = true; 
-    
+    let isStartRoute = true;
+
     if (pathname === '/' || pathname === '/login' || pathname === '/registration') {
-        isStartRoute = false; 
-    }
-    
-    const {login} = JSON.parse(localStorage.getItem('user')!);
-
-    if (login) {
-        router.start();
-        router.go('/chooseChat');
+        isStartRoute = false;
     }
 
-    if (isStartRoute) {
+    try {
+        const { login } = JSON.parse(localStorage.getItem('user')!);
         router.start();
-        router.go('/');
+
+        if (login) {            
+            router.go('/chooseChat');
+        }
+    } catch (e) {
+        router.start();
+
+        if (isStartRoute) {
+            router.go('/');
+        }
     }
 });

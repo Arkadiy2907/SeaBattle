@@ -1,0 +1,19 @@
+.wrapper__profileChange {
+	@include wrapper(flex-start, flex-start);
+	max-width: 100vw;
+	width: 100%;
+
+	.content {
+		@include contentProfile(1px solid $colorBlack);
+
+		.wrap__btn {
+			width: 100%;
+			display: flex;
+			justify-content: center;
+
+			.btn_width {
+				width: 40%;
+			}
+		}
+	}
+}

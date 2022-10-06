@@ -1,0 +1,58 @@
+{
+    "name": "middle.messenger.praktikum.yandex",
+    "version": "1.0.1",
+    "source": "src/index.html",
+    "scripts": {
+        "dev": "parcel src/index.html --open --port 3000 --no-source-maps --no-cache",
+        "build": "parcel build src/index.html --no-cache",
+        "start": "node server.js",
+        "lint": "eslint src/**/*.ts",
+        "lint:fix": "eslint src/**/*.ts --fix"
+    },
+    "author": "Arkadiy",
+    "license": "ISC",
+    "devDependencies": {
+        "@parcel/transformer-sass": "2.6.2",
+        "@types/node": "18.7.3",
+        "@typescript-eslint/eslint-plugin": "5.32.0",
+        "@typescript-eslint/parser": "5.32.0",
+        "eslint": "8.21.0",
+        "eslint-config-airbnb": "19.0.4",
+        "eslint-config-prettier": "8.5.0",
+        "eslint-plugin-html": "7.1.0",
+        "eslint-plugin-prettier": "4.2.1",
+        "parcel": "2.6.2",
+        "parcel-transformer-hbs": "1.0.4",
+        "prettier": "2.7.1",
+        "sass": "1.54.0",
+        "typescript": "4.7.4"
+    },
+    "targets": {
+        "default": {
+            "sourceMap": true,
+            "includeNodeModules": [
+                "handlebars"
+            ],
+            "context": "browser",
+            "distDir": "./dist"
+        }
+    },
+    "dependencies": {
+        "express": "4.18.1",
+        "handlebars": "4.7.7",
+        "node": "18.7.0",
+        "uuid": "8.3.2"
+    },
+    "engines": {
+        "node": "v16.x"
+    },
+    "description": "Chat - приложение для обмена сообщениями",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/Arkadiy2907/middle.messenger.praktikum.yandex.git"
+    },
+    "bugs": {
+        "url": "https://github.com/Arkadiy2907/middle.messenger.praktikum.yandex/issues"
+    },
+    "homepage": "https://github.com/Arkadiy2907/middle.messenger.praktikum.yandex#readme"
+}

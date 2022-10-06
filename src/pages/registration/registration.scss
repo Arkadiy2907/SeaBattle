@@ -1,0 +1,7 @@
+.wrapper__registration {
+	@include wrapper(center, center);
+
+	.registration {
+		@include enterForm(41rem, 2rem);
+	}
+}

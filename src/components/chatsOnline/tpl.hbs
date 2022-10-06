@@ -1,0 +1,39 @@
+<div class="wrap__chatContent">
+	<div class="chatContent">
+		<div class="wrap__header">
+			<div class="header__contant">
+				<div class="chat__logo"></div>
+				<h3 class="chat__title">{{chatTitle}}</h3>
+				<p>мой логин: {{login}}</p>
+			</div>
+			<div class="addDelUser">
+				<form class="addUser">
+					{{{inputAddUser}}}
+					{{{buttonAddUser}}}
+				</form>
+				<form class="delUser">
+					{{{inputDelUser}}}
+					{{{buttonDelUser}}}
+				</form>
+			</div>
+			<div class="delChat">
+				{{{buttonDelChat}}}
+			</div>
+		</div>
+		<section class="data__Message" id="data__Message">
+		</section>
+		<section class="otherUser_messages" id="otherUser_messages">
+		</section>
+		<section class="my__messages " id="my__messages">
+		</section>
+		<div class="wrap__footer">
+			<div class="footer__contant">
+				<div class="added"><a href="#"><span>&#128206;</span></a></div>
+				<form class="inputMessage">
+					<input type="text" class="message" name="message" placeholder="Сообщение">
+				</form>
+				{{{sendMessge}}}
+			</div>
+		</div>
+	</div>
+</div>

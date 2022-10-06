@@ -1,0 +1,28 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@500;600&family=Puppies+Play&display=swap");
+@import "./nullstyle.scss";
+@import "./option.scss";
+
+@import "../components/avatar/avatar.scss";
+@import "../components/reloadAvatar/reloadAvatar.scss";
+@import "../components/button/btnBlue.scss";
+@import "../components/link/link.scss";
+
+@import "../components/btnSendMessage/sendMessage.scss";
+@import "../components/arrowPrevPage/arrow.scss";
+@import "../components/message/message.scss";
+
+@import "../pages/login/login.scss";
+@import "../pages/registration/registration.scss";
+
+@import "../pages/chooseChat/chooseChat.scss";
+@import "../components/noChoseChat/noChoseChat.scss";
+@import "../components/chatsOnline/chatOnline.scss";
+
+@import "../pages/fiveHundred/fiveHundred.scss";
+@import "../pages/warning/warning.scss";
+
+@import "../pages/profile/profile.scss";
+@import "../pages/changeProfile/changeProfile.scss";
+@import "../pages/changePassword/changePassword.scss";
+
+@import "../pages/loadAvatar/chooseFileAvatar.scss";

@@ -1,4 +1,4 @@
-import { IMessageProps } from "../components/messageAside";
+import { IMessageProps } from '../components/messageAside';
 
 export const getValueOnCurrentChat = (
     currentChatId: string,
@@ -24,4 +24,3 @@ export const getValueOnCurrentChat = (
 
     return value;
 };
-

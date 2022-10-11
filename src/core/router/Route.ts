@@ -7,7 +7,7 @@ export class Route {
     private _blockClass: typeof Block;
 
     private _block: Block | null;
-    
+
     private _props: Record<string, any>;
 
     constructor(pathname: string, view: typeof Block, props: Record<string, any>) {
@@ -39,4 +39,3 @@ export class Route {
         renderDom(this._props.rootQuery, this._block);
     }
 }
-

@@ -10,13 +10,13 @@ import Message from '../message';
 import tpl from './tpl.hbs';
 
 export interface IMessageProps {
-	avatar?: string;
-	title?: string;
-	created_by?: number;
-	last_message?: Record<string, any>;
-	time?: Date;
-	id: number;
-	unread_count?: number;
+    avatar?: string;
+    title?: string;
+    created_by?: number;
+    last_message?: Record<string, any>;
+    time?: Date;
+    id: number;
+    unread_count?: number;
 }
 
 export default class MessageAside extends Block {
@@ -108,7 +108,7 @@ export default class MessageAside extends Block {
     }
 }
 
-async function createNewChat() {    
+async function createNewChat() {
     const createChat = document.querySelector<HTMLInputElement>('.create');
     if (createChat) {
         const title = createChat!.value === '' ? 'новый чат без имени' : createChat!.value;

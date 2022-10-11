@@ -3,7 +3,6 @@ import tpl from './tpl.hbs';
 
 type TLinkProps = {
     value: string;
-    href?: string;
     events?: {
         click: (event: Event) => void;
     };

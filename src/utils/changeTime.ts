@@ -4,8 +4,8 @@ export const getDate = (time: Date): string => {
         timeNow = time;
     } else {
         timeNow = new Date();
-    };
-    
+    }
+
     const day = timeNow.getDate() < 10 ? `0${timeNow.getDate()}` : `${timeNow.getDate()}`;
     const monthStr = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
     const month = monthStr[timeNow.getMonth()];

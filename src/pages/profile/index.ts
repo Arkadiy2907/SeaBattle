@@ -55,6 +55,12 @@ export default class Profile extends Block {
         const avatarLog = new Avatar({
             displayName: `${currentUser?.login}`,
             src: avatarIcon || startPic,
+            events: {
+                click: (e) => {
+                    e.preventDefault();
+                    router.go('/loadAvatar');
+                },
+            },
         });
 
         const {

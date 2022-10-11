@@ -7,14 +7,14 @@ type TInputProps = {
     type: string;
     placeholder?: string;
     readonly?: string;
-	class?: string;
-	value?: string;
+    class?: string;
+    value?: string;
     events?: {
         blur: (event: InputEvent) => void;
         focus: (event: InputEvent) => void;
     };
 }
-class Input extends Block <TInputProps>{
+class Input extends Block<TInputProps> {
     public constructor(props: TInputProps) {
         super('div', props);
     }

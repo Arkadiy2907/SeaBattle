@@ -1,10 +1,10 @@
 type Methods = 'GET' | 'POST' | 'PUT' | 'DELETE';
 
 type TOptions = {
-  headers?: Record<string, string>;
-  method?: Methods;
-  data?: any;
-  contentType?: string;
+    headers?: Record<string, string>;
+    method?: Methods;
+    data?: any;
+    contentType?: string;
 };
 
 export class Client {

@@ -196,7 +196,7 @@ $colorFont: #ff6600;
 		justify-content: space-between;
 		margin-bottom: 23px;
 
-		.a {
+		.btn_text {
 			color: $colorGrey;
 			font-size: 12px;
 			transition: all 0.3s linear;
@@ -312,7 +312,7 @@ $colorFont: #ff6600;
 	align-items: center;
 	cursor: pointer;
 
-	.a {
+	.blueCircle_a {
 		color: $colorWhite;
 		font-size: $fontSize;
 		transition: all 0.3s linear;
@@ -321,7 +321,7 @@ $colorFont: #ff6600;
 	&:hover {
 		background-color: $colorGreen;
 
-		.a {
+		.blueCircle_a {
 			color: $colorFont;
 		}
 	}

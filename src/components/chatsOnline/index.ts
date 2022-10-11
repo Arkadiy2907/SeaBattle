@@ -27,8 +27,8 @@ export default class ChatOnline extends Block {
         const sendMessge = new BtnSendMessage({
             events: {
                 click: (event) => {
-                    event.preventDefault();      
-                    sendMessage(socket);                    
+                    event.preventDefault();
+                    sendMessage(socket);
                 },
             },
         });
@@ -37,7 +37,7 @@ export default class ChatOnline extends Block {
             ...props,
             chatTitle: getValueOnCurrentChat(currentChatId || '', 'chats', 'title'),
             login: getLogin(),
-            sendMessge
+            sendMessge,
         });
     }
 
@@ -50,9 +50,8 @@ const getLogin = () => {
     try {
         const { login } = JSON.parse(localStorage.getItem('user')!);
         return login;
-    }
-    catch (e) {
-        console.log('не валидный login');        
+    } catch (e) {
+        console.log('не валидный login');
     }
 };
 
@@ -74,13 +73,13 @@ const handleMessages = (messages: Record<string, any> | Record<string, any>[]) =
     timeAllMessage.className = 'headerTime';
 
     if (isMessagesArray) {
-        timeAllMessage.textContent = getDate(new Date(messages[0]?.time));        
+        timeAllMessage.textContent = getDate(new Date(messages[0]?.time));
     } else {
         timeAllMessage.textContent = getDate(new Date(messages?.time));
     }
 
     const headerTime = document.querySelector('.headerTime');
-    
+
     if (headerTime) {
         timeAllMessage.textContent = '';
     }

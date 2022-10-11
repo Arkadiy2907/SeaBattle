@@ -16,8 +16,8 @@ class ChatApi {
         return _http.get('/');
     }
 
-    deleteChat(id: number):Promise<unknown> {
-        return _http.delete("/", { chatId: id });
+    deleteChat(id: number): Promise<unknown> {
+        return _http.delete('/', { chatId: id });
     }
 
     createChat(data: TCreateChat): Promise<unknown> {
@@ -35,8 +35,6 @@ class ChatApi {
     getChatUsers(chatId: number = 0): Promise<unknown> {
         return _http.post(`/token/${chatId}`);
     }
-
-    
 }
 
 const chatApi = new ChatApi();

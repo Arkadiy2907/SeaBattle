@@ -7,7 +7,7 @@ type TButtonBlueProps = {
     type?: string;
     events?: {
         click: (event: Event) => void;
-	};	
+    };
 };
 
 export default class ButtonBlue extends Block<TButtonBlueProps> {

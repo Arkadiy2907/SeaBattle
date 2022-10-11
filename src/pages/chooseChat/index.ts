@@ -88,8 +88,6 @@ export default class ChooseChat extends Block {
             ? chatOnline
             : noChoseChat;
 
-
-
         super('div', {
             ...props,
             messageAside,

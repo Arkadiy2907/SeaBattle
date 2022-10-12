@@ -1,20 +1,5 @@
 import EventBus from './EventBus';
-
 import { nanoid } from 'nanoid';
-// если так запустить то тесты работают
-// но после сборки билда проходи но не запускается сервер 
-// выходит ошибка Uncaught TypeError: Failed to resolve module specifier "nanoid". 
-// Relative references must start with either "/", "./", or "../".
-
-// import { nanoid } from '../../node_modules/nanoid/index';
-// если так указывать то выходит ошибка при тесте: Unknown file extension ".ts"
-// зато билд собирается и сервер запускается
-
-
-
-// const { v4: uuidv4 } = require('/node_modules/uuid/dist/index');//то же как и с nanoid
-
-// type Events = 'init' | 'flow:component-did-mount' | 'flow:component-did-update' | 'flow:render';
 
 type TProps = Record<string, any>;
 
@@ -36,7 +21,7 @@ export default class Block<Props extends Record<string, any> = any> {
         this.children = children;
         const eventBus = new EventBus();
         this.eventBus = () => eventBus;
-        this.id = /* uuidv4();  */nanoid(6);
+        this.id = nanoid(6);
         this.props = this._makePropsProxy({ ...props, id: this.id });
         this.tagName = tagName;
         this._registerEvents(eventBus);
@@ -95,7 +80,7 @@ export default class Block<Props extends Record<string, any> = any> {
             return;
         }
 
-        const { children/* , props */ } = this._getChildren(nextProps);
+        const { children } = this._getChildren(nextProps);
         Object.assign(this.children, children);
         Object.assign(this.props, nextProps);
     };

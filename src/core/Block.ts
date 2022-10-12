@@ -1,5 +1,5 @@
+import { nanoid } from 'nanoid/non-secure';
 import EventBus from './EventBus';
-import { nanoid } from 'nanoid';
 
 type TProps = Record<string, any>;
 

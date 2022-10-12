@@ -17,6 +17,5 @@
         "esModuleInterop": true,
         "allowJs": true,      
     },
-    "files": ["src/index.ts"],
-    "include": ["typings"],
+    "include": ["./src/**/*"],
 }

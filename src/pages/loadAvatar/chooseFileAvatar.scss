@@ -1,7 +1,0 @@
-.wrapper__loadAvatar {
-	@include wrapper(center, center);
-
-	.loadAvatar {
-		@extend %loadAvatar;
-	}
-}

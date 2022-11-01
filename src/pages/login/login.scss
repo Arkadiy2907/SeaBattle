@@ -1,7 +1,0 @@
-.wrapper__index {
-	@include wrapper(center, center);
-
-	.enterChat {
-		@include enterForm(32rem, 12rem);
-	}
-}

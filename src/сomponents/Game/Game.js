@@ -57,7 +57,7 @@ const isWinner = (squares, name) => {
     }
   }
 
-  if (counter.toString() === obj.reduce((acc, elem) => elem ? acc + 1 : acc, 0)) return true;  //если counter равен числу всех кораблей, то это Победа! 
+  if (counter == obj.reduce((acc, elem) => elem ? acc + 1 : acc, 0)) return true;  //если counter равен числу всех кораблей, то это Победа! 
 
   return null;
 }

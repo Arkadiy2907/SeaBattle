@@ -7,7 +7,7 @@ const Square = (props) => {
             classN += " colorize";     //добавляем данный класс ячейке с кораблями 
     }
 
-    return ( //при клике по кнопке выполняется функция handlrClick (ниже)
+    return ( //при клике по кнопке выполняется функция handlrClick
         <button className={classN} onClick={props.onClick}>
             {props.value}
         </button>

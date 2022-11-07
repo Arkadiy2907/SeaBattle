@@ -1,0 +1,68 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.App {
+  text-align: center;
+}
+
+.game {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+.game .game-board {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  padding: 10px;
+}
+.game .game-board .container_area {
+  margin: 0 5rem;
+}
+.game .game-board .status1 {
+  margin-bottom: 10px;
+}
+.game .game-board .status2 {
+  margin-bottom: 15px;
+}
+.game .game-board .nameBoard {
+  margin-bottom: 10px;
+  margin-top: 10px;
+  text-align: center;
+  background: burlywood;
+}
+.game .game-board .computer {
+  background: #d1d1d1;
+}
+.game .game-board .colorize {
+  background: green;
+}
+.game #reload {
+  margin-top: 20px;
+}
+.game #reload:hover {
+  color: red;
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+.square {
+  background: rgb(243, 243, 243);
+  border: 1px solid rgb(73, 126, 249);
+  float: left;
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 34px;
+  height: 30px;
+  width: 30px;
+  margin-right: -1px;
+  margin-top: -1px;
+  padding: 0;
+  text-align: center;
+  cursor: pointer;
+}

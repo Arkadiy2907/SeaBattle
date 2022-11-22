@@ -27,13 +27,13 @@ import {
   drawStatusShips,
   canvasWidth,
   canvasHeight,
-  getAllTimeGame,
+  // getAllTimeGame,
 } from "./helper";
 
 import { CellArgs, BoardProps } from "./types";
 
 let currentPlayer = "player"; //За кем текущий ход
-let startTime: number; // время начала игры
+// let startTime: number; // время начала игры
 let timeClickComp = 700; // время реакции компа
 
 const Board = ({
@@ -56,28 +56,24 @@ const Board = ({
   const [countPlayerShips, setCountPlayerShips] = useState(allPlayerShips); //Количество кораблей для уничтожения
   const [countCompShips, setCountCompShips] = useState(allCompShips); //Количество кораблей для уничтожения
 
-  const [lossPlayer, setLossPlayer] = useState(0); //количество проигрышей игрока
-  const [winPlayer, setWinPlayer] = useState(0); //количество выигрышей игрока
-  const [timeGame, setTimeGame] = useState(""); // время игры
+  // const [lossPlayer, setLossPlayer] = useState(0); //количество проигрышей игрока
+  // const [winPlayer, setWinPlayer] = useState(0); //количество выигрышей игрока
+  // const [timeGame, setTimeGame] = useState(""); // время игры
 
-  useEffect(() => {
-    startTime = Date.now();
-  }, []);
+  // useEffect(() => {//для дальнейшей реализации создания рейтинга на основе времени и выиграшей
+  //   startTime = Date.now();
+  // }, []);
 
-  useEffect(() => {
-    if (countCompShips === 0 || countPlayerShips === 0)
-      setTimeGame(getAllTimeGame(startTime));
-    if (countCompShips === 0) {
-      setWinPlayer(winPlayer + 1);
-    }
-    if (countPlayerShips === 0) {
-      setLossPlayer(lossPlayer + 1);
-    }
-
-    console.log(timeGame);
-    console.log(winPlayer);
-    console.log(lossPlayer);
-  }, [countCompShips, countPlayerShips]);
+  // useEffect(() => {
+  //   if (countCompShips === 0 || countPlayerShips === 0)
+  //     setTimeGame(getAllTimeGame(startTime));
+  //   if (countCompShips === 0) {
+  //     setWinPlayer(winPlayer + 1);
+  //   }
+  //   if (countPlayerShips === 0) {
+  //     setLossPlayer(lossPlayer + 1);
+  //   }
+  // }, [countCompShips, countPlayerShips]);
 
   const canvasRef: RefObject<HTMLCanvasElement> =
     useRef<HTMLCanvasElement | null>(null);

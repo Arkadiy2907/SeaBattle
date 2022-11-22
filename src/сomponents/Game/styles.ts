@@ -21,7 +21,7 @@ export const wrapButton = {
   display: "flex",
   flexDirection: "column",
   padding: "5px",
-  justifyContent: "flexStart",
+  justifyContent: "center",
   alignItems: "stretch",
   minHeight: "100%",
   marginLeft: "1rem",

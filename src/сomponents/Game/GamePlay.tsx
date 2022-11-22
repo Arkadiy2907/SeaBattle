@@ -66,28 +66,6 @@ const Game = (): ReactElement => {
             coords={coords}
           />
           <Box sx={{ ...wrapButton }}>
-            {/* <Button
-              onClick={restartGame}
-              variant="contained"
-              href="/game/play"
-              sx={{ ...buttonStyles, marginTop: "3rem" }}
-            >
-              Играть снова
-            </Button>
-            <Button
-              variant="contained"
-              href="/profile"
-              sx={{ ...buttonStyles, marginTop: "1rem" }}
-            >
-              В профиль
-            </Button>
-            <Button
-              variant="contained"
-              sx={{ ...buttonStyles, marginTop: "1rem" }}
-              href="/ranking"
-            >
-              Рейтинг
-            </Button> */}
             <Box sx={{ ...wrapShip }}>
               <Box sx={{ display: "flex", margin: "1rem 0" }}>
                 <Box
@@ -144,8 +122,6 @@ const Game = (): ReactElement => {
             <Button
               onClick={restartGame}
               variant="contained"
-              // href="/game/play"
-              // sx={{ ...buttonStyles, marginTop: "3rem" }}
               sx={{ ...buttonStyles, margin: "3rem 0" }}
             >
               Играть снова

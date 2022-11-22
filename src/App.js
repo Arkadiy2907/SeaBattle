@@ -1,8 +1,4 @@
-
-import Game from "./сomponents/Game/Game"
-import './scss/style.scss';
-
-
+import Game from "./сomponents/Game/GamePlay"
 
 function App() {
   return (
